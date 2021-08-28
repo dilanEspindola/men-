@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/*.contenedor-main{
+    max-width: 1200px;
+}*/
+
+.header {
+    width: 100%;    
+    height: auto;    
+    background: rgba(255, 255, 255,.0);         
+    padding: 50px;     
+    background: url("../img/cafeteria-2.jpg");        
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;     
+}
+
+
+.container{
+    max-width: 1100px;
+    margin: auto;
+}
+
+.header .logo{
+    float: left;
+    line-height: 65px;
+}
+
+.header .menu{
+    float: right;
+    line-height: 65px;
+}
+
+.header .menu ul{
+    display: flex;
+    list-style: none;
+    
+}
+
+.header .menu ul li a{
+    text-decoration: none;
+    display: block;
+    padding: 0 20px;
+    color: #fff;    
+    transition: all .5s ease;
+}
+
+.header .menu ul li a:hover{
+    background: #cc673b;
+    color: #fff;    
+}
+
+.header .menu .submenu{    
+    /*box-shadow: 3px 10px 10px;*/
+    display: none;    
+}
+
+.header .menu .submenu li a{
+    line-height: 50px;    
+    
+}
+
+.header .menu ul li a:hover + ul, .menu .submenu:hover{
+    display: block;      
+    overflow: visible;  
+}
+
+.main{    
+    padding: 10px;
+    position: absolute;
+    width: 35%;
+    bottom: 25%;
+    left: 23%;
+}
+
+.main h1{
+    color: #fff;
+    font-size: 54px;
+    line-height: 120%;
+}
+
+.contenido-productos{
+    width: 100%;    
+    padding: 50px;      
+}
+
+.contenido-productos .titulo-menu{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 32px;
+}
+
+.contenido-productos .menu{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.contenido-productos .menu .descripcion h1{
+    text-align: center;
+    margin-bottom: 25px;
+    border-bottom: 1px solid;    
+}
+
+.contenido-productos .menu .descripcion{
+    border: 1px solid;
+    padding: 30px;
+    width: 30%;
+    border-radius: 5px;
+    background:#dadada;
+}
+
+.contenido-productos .menu .descripcion .tipos ul li{
+    list-style: none;
+    padding: 10px 0;
+    border-bottom: 1px solid;    
+    position: relative;
+}
+
+.contenido-productos .menu .descripcion .tipos ul li span{
+    position: absolute;
+    left: 60%;
+}
+
+footer .redes-sociales{
+    width: 100%;
+    border: 1px solid;
+    padding: 50px 80px;
+    display: flex;
+    justify-content: center;
+    background: #1e2b38;
+}
+
+footer .redes-sociales a{
+    font-size: 32px;
+    margin: 0 40px;
+    padding: 10px;
+    width: 10%;
+    border-radius: 5px;
+    text-align: center;
+    color: #fff;
+}
+
+footer .redes-sociales .twitter:hover{
+    background: #1da1f2;
+    transition: all ease-in-out .3s;
+}
+
+footer .redes-sociales .facebook:hover{
+    background: #3b5998;
+    transition: all ease-in-out .3s;
+}
+
+footer .redes-sociales .instagram:hover{
+    background: #833ab4;
+    transition: all ease-in-out .3s;
+}
+
+footer .redes-sociales .youtube:hover{
+    background: #ff0000;
+    transition: all ease-in-out .3s;
+}
+
+footer .redes-sociales .iconos:active{
+    transform: scale(0.9);
+}
